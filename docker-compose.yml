@@ -4,7 +4,7 @@ services:
     restart: unless-stopped
     environment:
       - REPO=davmacario/learning-automation-testing
-      - TOKEN=AURTQMREQNMIWYKIGGZRZMDGPOU4O
+      - TOKEN=<TODO>
     deploy:
       mode: replicated
       replicas: 1
