@@ -1,0 +1,17 @@
+services:
+  runner:
+    image: github-runner:latest
+    restart: unless-stopped
+    environment:
+      - REPO=davmacario/learning-automation-testing
+      - TOKEN=AURTQMREQNMIWYKIGGZRZMDGPOU4O
+    deploy:
+      mode: replicated
+      replicas: 1
+      resources:
+        limits:
+          cpus: '0.35'
+          memory: 300M
+        reservations:
+          cpus: '0.20'
+          memory: 128M
