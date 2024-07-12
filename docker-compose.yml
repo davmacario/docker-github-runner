@@ -3,8 +3,8 @@ services:
     image: github-runner:latest
     restart: unless-stopped
     environment:
-      - REPO=davmacario/learning-automation-testing
-      - TOKEN=<TODO>
+      - REPO=<YOUR-REPO>
+      - TOKEN=<YOUR-TOKEN>
     deploy:
       mode: replicated
       replicas: 1
